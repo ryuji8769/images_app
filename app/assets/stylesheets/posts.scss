@@ -1,3 +1,45 @@
 // Place all the styles related to the Posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+.posts1 {
+	width: 100%;
+	text-align: center;
+	padding: 4px;
+	background-color: rgb(241, 241, 241);
+	border: 1px solid rgb(226, 226, 226);
+}
+.posts1 h1 {
+	height: 40px;
+}
+
+.posts2 {
+	width: 100%;
+	text-align: center;
+	background-color: transparent;
+	border: 1px solid rgb(226, 226, 226);
+}
+
+.actions2 {
+	width: 50%;
+}
+.actions2 input {
+    width: 14%;
+    background-color: lightskyblue;
+    color: #fff;
+    border:1px solid lightskyblue;
+    padding: 5px;
+	margin: 20px 0 30px 857px;
+    border-radius: 15px;
+}
+
+#post_age {
+	width: 40%;
+	height: 40px;
+	margin-bottom: 30px;
+}
+
+#post_nickname {
+	width: 40%;
+	height: 40px;
+	margin-bottom: 30px;
+}

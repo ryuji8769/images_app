@@ -63,3 +63,60 @@ div.actions {
 
 label {
   display: block; }
+
+.login-up1 {
+  width: 100%;
+  display: flex;
+  background-color: rgb(118, 203, 255);
+  height: 50px;
+  margin: 0 auto 20px;
+}
+
+
+.login-up2 {
+   width: 10%;
+   margin-bottom: 50px;
+   color: rgb(255, 255, 255);
+  }
+  
+  .login-up2 h2 {
+    font-weight: 200;
+}
+
+.fa-twitter {
+  color: #fff;
+}
+
+.field {
+  width:100%;
+  margin: 0 auto;
+}
+
+#user_email {
+  width: 80%;
+  margin-bottom: 20px;
+}
+#user_password {
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+#user_password_confirmation {
+  width: 100%;
+  height: 50px;
+}
+
+.new_user {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.actions input {
+  width: 100%;
+  background-color: lightskyblue;
+  color: #fff;
+  border:1px solid lightskyblue;
+  padding: 8px;
+  margin-top: 20px;
+  border-radius: 15px;
+}

@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'home/top'
+  get 'home/top' 
   devise_for :users, controllers: {
     registrations: 'users/registrations',
     sessions:      'users/sessions',

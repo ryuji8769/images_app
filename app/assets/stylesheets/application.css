@@ -13,34 +13,3 @@
  *= require_tree .
  *= require_self
  */
-.login {
-	margin: 0 auto;
-	width: 40%;
-}
-
-.login h2 {
-	width: 100%;
-	font-size: 35px;
-}
-
-#user_email {
-	width: 100%;
-    height: 50px;
-	margin-bottom: 20px;
-}
-
-#user_password {
-	width: 100%;
-    height: 50px;
-	margin-bottom: 20px;
-}
-
-.btn {
-	width: 100%;
-	color: #f1f1f1;
-    background-color: lightskyblue;
-	height: 50px;
-	border: 1px solid lightskyblue;
-	border-radius: 30px;
-	margin-bottom: 20px;
-}

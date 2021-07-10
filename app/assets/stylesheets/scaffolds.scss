@@ -79,12 +79,12 @@ label {
    color: rgb(255, 255, 255);
   }
   
-  .login-up2 h2 {
+  .login-up2 h3 {
     font-weight: 200;
 }
 
-.fa-twitter {
-  color: #fff;
+#twitter {
+  color:rgb(253, 253, 253);
 }
 
 .field {
@@ -93,11 +93,13 @@ label {
 }
 
 #user_email {
-  width: 80%;
+  width: 100%;
+  height: 50px;
   margin-bottom: 20px;
 }
 #user_password {
-  width: 80%;
+  width: 100%;
+  height: 50px;
   margin-bottom: 20px;
 }
 
@@ -119,4 +121,45 @@ label {
   padding: 8px;
   margin-top: 20px;
   border-radius: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+.login {
+	margin: 0 auto;
+	width: 40%;
+}
+
+.login h2 {
+	width: 100%;
+	font-size: 35px;
+}
+
+.user_email {
+	width: 100%;
+    height: 50px;
+	margin-bottom: 20px;
+}
+
+.user_password {
+	width: 100%;
+    height: 50px;
+	margin-bottom: 20px;
+}
+
+.btn {
+	width: 100%;
+	color: #f1f1f1;
+    background-color: lightskyblue;
+	height: 50px;
+	border: 1px solid lightskyblue;
+	border-radius: 30px;
+	margin-bottom: 20px;
 }

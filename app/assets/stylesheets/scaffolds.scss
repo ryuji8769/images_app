@@ -63,3 +63,103 @@ div.actions {
 
 label {
   display: block; }
+
+.login-up1 {
+  width: 100%;
+  display: flex;
+  background-color: rgb(118, 203, 255);
+  height: 50px;
+  margin: 0 auto 20px;
+}
+
+
+.login-up2 {
+   width: 10%;
+   margin-bottom: 50px;
+   color: rgb(255, 255, 255);
+  }
+  
+  .login-up2 h3 {
+    font-weight: 200;
+}
+
+#twitter {
+  color:rgb(253, 253, 253);
+}
+
+.field {
+  width:100%;
+  margin: 0 auto;
+}
+
+#user_email {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 20px;
+}
+#user_password {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+#user_password_confirmation {
+  width: 100%;
+  height: 50px;
+}
+
+.new_user {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.actions input {
+  width: 100%;
+  background-color: lightskyblue;
+  color: #fff;
+  border:1px solid lightskyblue;
+  padding: 8px;
+  margin-top: 20px;
+  border-radius: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+.login {
+	margin: 0 auto;
+	width: 40%;
+}
+
+.login h2 {
+	width: 100%;
+	font-size: 35px;
+}
+
+.user_email {
+	width: 100%;
+    height: 50px;
+	margin-bottom: 20px;
+}
+
+.user_password {
+	width: 100%;
+    height: 50px;
+	margin-bottom: 20px;
+}
+
+.btn {
+	width: 100%;
+	color: #f1f1f1;
+    background-color: lightskyblue;
+	height: 50px;
+	border: 1px solid lightskyblue;
+	border-radius: 30px;
+	margin-bottom: 20px;
+}

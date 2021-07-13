@@ -1,0 +1,24 @@
+
+<div class="conteiner">
+<div class="login">
+<i class="fab fa-twitter fa-4x"></i>
+<h2>Twiiterにログイン</h2>
+
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+  <div class="field">
+    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+  </div>
+
+  <div class="field">
+    <%= f.password_field :password, autocomplete: "current-password" %>
+  </div>
+
+
+  <div class="actions">
+    <%= f.submit "ログイン" , class: "btn" %>
+  </div>
+<% end %>
+
+<%= render "devise/shared/links"%>
+</div>
+</div>

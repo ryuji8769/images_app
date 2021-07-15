@@ -8,6 +8,7 @@ class PostsController < ApplicationController
 
   # GET /posts/1 or /posts/1.json
   def show
+    @post = Post.find_by(id: params[:id])
   end
 
   # GET /posts/new
@@ -21,7 +22,10 @@ class PostsController < ApplicationController
 
   # POST /posts or /posts.json
   def create
-    @post = Post.new(post_params)
+    @post = Post.new(
+      nickname: params[:nickname],
+      user_id: current_user.id
+    )
 
     respond_to do |format|
       if @post.save
@@ -36,14 +40,13 @@ class PostsController < ApplicationController
 
   # PATCH/PUT /posts/1 or /posts/1.json
   def update
-    respond_to do |format|
-      if @post.update(post_params)
-        format.html { redirect_to @post, notice: "Post was successfully updated." }
-        format.json { render :show, status: :ok, location: @post }
-      else
-        format.html { render :edit, status: :unprocessable_entity }
-        format.json { render json: @post.errors, status: :unprocessable_entity }
-      end
+    @post = Post.find_by(id: params[:id])
+    @post.nickname = params[:nickname]
+    if @post.save
+      flash[:notice] = "投稿を編集しました"
+      redirect_to("/posts")
+    else
+      render("posts/edit")
     end
   end
 
@@ -63,7 +66,4 @@ class PostsController < ApplicationController
     end
 
     # Only allow a list of trusted parameters through.
-    def post_params
-      params.require(:post).permit(:nickname, :age, :avatar)
-    end
 end
